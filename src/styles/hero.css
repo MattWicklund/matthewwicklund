@@ -74,6 +74,14 @@
   border-color: #46505c;
 }
 
+.hero__statement {
+  max-width: 800px;
+  margin: var(--space-md) 0 0;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
 @media (max-width: 640px) {
   .hero {
     padding: 4rem 1.25rem;

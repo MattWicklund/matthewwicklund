@@ -1,12 +1,12 @@
 .music {
-  padding-block: var(--space-xl);
+  padding-block: clamp(7rem, 10vw, 11rem);
   border-top: 1px solid var(--color-border);
 }
 
 .music__label {
-  margin: 0 0 var(--space-lg);
+  margin: 0 0 var(--space-md);
   color: var(--color-text-muted);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -14,27 +14,24 @@
 
 .music__intro {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: var(--space-lg);
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
   margin-bottom: var(--space-lg);
 }
 
 .music__intro h2 {
-  margin: 0;
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.05em;
+  max-width: 760px;
 }
 
-.music__intro p,
-.music__card p {
-  color: var(--color-text-muted);
-  line-height: 1.7;
+.music__intro > p {
+  max-width: 520px;
+  padding-top: 0.5rem;
 }
 
 .music__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-md);
 }
 
@@ -69,22 +66,29 @@
 
 .music__feature {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-lg);
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: clamp(4rem, 7vw, 8rem);
   align-items: center;
-  margin-bottom: var(--space-lg);
+}
+
+.music__feature-copy {
+  max-width: 650px;
 }
 
 .music__feature-copy h2 {
   margin: 0;
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.05em;
+  max-width: 620px;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
 }
 
 .music__feature-copy p {
+  max-width: 520px;
+  margin: var(--space-md) 0 0;
   color: var(--color-text-muted);
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .music__image-wrap {
@@ -104,9 +108,19 @@
 @media (max-width: 800px) {
   .music__feature {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .music__feature-copy {
+    max-width: none;
   }
 
   .music__image {
     min-height: 320px;
   }
+
+  .music__image-wrap {
+    max-width: 700px;
+  }
+
 }

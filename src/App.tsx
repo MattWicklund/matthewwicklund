@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Engineering from './sections/Engineering'
@@ -15,6 +16,7 @@ import './styles/contact.css'
 function App() {
   return (
     <main>
+      <Navbar />
       <Hero />
       <About />
       <Engineering />

@@ -4,14 +4,14 @@
 }
 
 .music-transition__image-wrap {
+  width: min(100%, 900px);
+  margin-inline: auto;
   overflow: hidden;
   border-radius: var(--radius-card);
-  background: var(--color-surface);
 }
 
 .music-transition__image {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }

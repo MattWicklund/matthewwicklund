@@ -2,7 +2,7 @@ import Container from '../components/Container/Container'
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="top">
       <Container>
         <div className="hero__content">
           <p className="hero__eyebrow">
@@ -15,9 +15,13 @@ function Hero() {
             Wicklund
           </h1>
 
+          <p className="hero__statement">
+            Engineering software with a musician&apos;s attention to detail.
+          </p>
+
           <p className="hero__description">
-            I build production software and create music professionally,
-            bringing engineering, technology, and creative work together.
+            Six years building production software at Ookla. More than two decades
+            creating, recording, and performing music professionally.
           </p>
         </div>
 
