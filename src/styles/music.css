@@ -131,6 +131,24 @@
   transform: translateX(3px);
 }
 
+.music__spotify-logo {
+  width: 110px;
+  height: auto;
+  margin-top: var(--space-md);
+}
+
+.music__spotify-links {
+  display: grid;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.music__spotify-links .music__link {
+  margin-top: 0;
+}
+
 @media (max-width: 800px) {
   .music__grid,
   .music__feature {

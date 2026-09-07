@@ -72,6 +72,54 @@ function Music() {
               More than two decades of professional recording and touring, including
               work with Himsa, God Forbid, Warrel Dane, and Ghost Ship Octavius.
             </p>
+            <img
+              src="/images/spotify-logo-green.png"
+              alt="Spotify"
+              className="music__spotify-logo"
+              loading="lazy"
+            />
+            <ul className="music__spotify-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/7E1Soj4kGw9zyhIJWZyOhx?si=edc0c7c4d04244c0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="music__link"
+                >
+                  Ghost Ship Octavius on Spotify <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/1qrGnVZhEO4vX3ahn4RY1r?si=9QRZwJI5Rni_WtpJMYLWNQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="music__link"
+                >
+                  Warrel Dane on Spotify <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/2OgQ0tvf2ldbdlm8sXyx3M?si=jyYsetf8RZesqduUIonujA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="music__link"
+                >
+                  God Forbid on Spotify <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/3eYUm924tyABe11T1wxrPp?si=10cf0614141949cb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="music__link"
+                >
+                  Himsa on Spotify <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+            </ul>
           </article>
         </div>
       </Container>
