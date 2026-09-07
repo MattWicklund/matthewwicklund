@@ -15,15 +15,18 @@ import './styles/contact.css'
 
 function App() {
   return (
-    <main>
+    <>
       <Navbar />
-      <Hero />
-      <About />
-      <Engineering />
-      <MusicTransition />
-      <Music />
-      <Contact />
-    </main>
+
+      <main>
+        <Hero />
+        <About />
+        <Engineering />
+        <MusicTransition />
+        <Music />
+        <Contact />
+      </main>
+    </>
   )
 }
 
