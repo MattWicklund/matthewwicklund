@@ -1,0 +1,17 @@
+.music-transition {
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.music-transition__image-wrap {
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+}
+
+.music-transition__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
