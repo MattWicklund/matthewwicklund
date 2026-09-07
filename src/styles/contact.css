@@ -5,7 +5,9 @@
 
 .contact__label {
   margin: 0 0 var(--space-lg);
+
   color: var(--color-text-muted);
+
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -15,32 +17,53 @@
 .contact h2 {
   margin: 0;
   max-width: 700px;
+
   font-size: clamp(3rem, 7vw, 7rem);
   line-height: 0.95;
   letter-spacing: -0.06em;
 }
 
-.contact__copy {
+.contact__intro {
   max-width: 600px;
-  margin-top: var(--space-md);
+  margin-top: 3.5rem;
+
   color: var(--color-text-muted);
+
   font-size: 1.1rem;
   line-height: 1.7;
 }
 
 .contact__links {
   display: flex;
-  gap: var(--space-md);
-  margin-top: var(--space-md);
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+
+  margin-top: var(--space-lg);
 }
 
 .contact__links a {
-  border-bottom: 1px solid var(--color-text-muted);
-  padding-bottom: 0.15rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  color: var(--color-text-muted);
+  text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.2rem;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.contact__footer {
-  margin-top: var(--space-xl);
-  color: var(--color-text-muted);
-  font-size: 0.8rem;
+.contact__links a:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-muted);
+  transform: translateY(-2px);
+}
+
+.contact__links span {
+  font-size: 0.8em;
 }

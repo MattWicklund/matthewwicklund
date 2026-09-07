@@ -5,7 +5,11 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar__inner">
         <a href="#top" className="navbar__brand">
-          MW
+          <img
+            src="/images/matt-signature-logo.svg"
+            alt="Matthew Wicklund"
+            className="navbar__logo"
+          />
         </a>
 
         <nav>

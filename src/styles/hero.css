@@ -54,26 +54,6 @@
   line-height: 1.6;
 }
 
-.hero__actions {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2.5rem;
-}
-
-.hero__actions a {
-  padding: 0.85rem 1.2rem;
-  border: 1px solid #2a3038;
-  border-radius: 999px;
-  transition:
-    background 150ms ease,
-    border-color 150ms ease;
-}
-
-.hero__actions a:hover {
-  background: #12161c;
-  border-color: #46505c;
-}
-
 .hero__statement {
   max-width: 800px;
   margin: var(--space-md) 0 0;
@@ -85,10 +65,5 @@
 @media (max-width: 640px) {
   .hero {
     padding: 4rem 1.25rem;
-  }
-
-  .hero__actions {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }

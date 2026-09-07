@@ -6,13 +6,6 @@ import MusicTransition from './sections/MusicTransition'
 import Music from './sections/Music'
 import Contact from './sections/Contact'
 
-import './styles/hero.css'
-import './styles/about.css'
-import './styles/engineering.css'
-import './styles/music-transition.css'
-import './styles/music.css'
-import './styles/contact.css'
-
 function App() {
   return (
     <>

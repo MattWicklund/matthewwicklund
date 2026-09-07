@@ -1,4 +1,5 @@
 import Container from '../components/Container/Container'
+import '../styles/music-transition.css'
 
 function MusicTransition() {
   return (
