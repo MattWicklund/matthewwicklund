@@ -53,7 +53,7 @@
 
   opacity: 0.9;
 
-  transform: rotate(28deg);
+  transform: translateY(-8px) rotate(28deg);
   transform-origin: left bottom;
 
   transition:
@@ -63,5 +63,5 @@
 
 .navbar__brand:hover .navbar__logo {
   opacity: 1;
-  transform: rotate(28deg) scale(1.03);
+  transform: translateY(-8px) rotate(28deg) scale(1.03);
 }
