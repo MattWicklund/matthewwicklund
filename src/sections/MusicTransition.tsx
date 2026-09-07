@@ -6,7 +6,7 @@ function MusicTransition() {
       <Container>
         <div className="music-transition__image-wrap">
           <img
-            src="public/images/GSOMattGermany1.jpg"
+            src="/images/GSOMattGermany1.jpg"
             alt="Matthew Wicklund performing live on guitar"
             className="music-transition__image"
           />
