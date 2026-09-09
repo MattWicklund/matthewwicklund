@@ -1,4 +1,5 @@
 import Container from '../components/Container/Container'
+import TechLogo from '../components/TechLogo/TechLogo'
 import '../styles/engineering.css'
 
 function Engineering() {
@@ -44,8 +45,8 @@ function Engineering() {
             </p>
 
             <div className="engineering__tags">
-              <span>React</span>
-              <span>TypeScript</span>
+              <TechLogo technology="React" />
+              <TechLogo technology="TypeScript" />
               <span>Testing</span>
               <span>Refactoring</span>
               <span>QA</span>
@@ -63,10 +64,10 @@ function Engineering() {
             </p>
 
             <div className="engineering__tags">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Node.js</span>
-              <span>Vite</span>
+              <TechLogo technology="React" />
+              <TechLogo technology="TypeScript" />
+              <TechLogo technology="Node.js" />
+              <TechLogo technology="Vite" />
             </div>
           </article>
 
@@ -77,6 +78,9 @@ function Engineering() {
               Contributed to transforming Ookla’s public-facing website into a
               headless architecture with WordPress integration.
             </p>
+            <div className="engineering__tags">
+              <TechLogo technology="Speedtest" />
+            </div>
           </article>
 
           <article className="engineering__card">
@@ -88,9 +92,9 @@ function Engineering() {
             </p>
 
             <div className="engineering__tags">
-              <span>Python</span>
-              <span>Django</span>
-              <span>Internal tooling</span>
+              <TechLogo technology="Python" />
+              <TechLogo technology="Django" />
+              <TechLogo technology="Internal tooling" />
             </div>
           </article>
         </div>

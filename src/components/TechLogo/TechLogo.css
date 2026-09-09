@@ -1,0 +1,69 @@
+.tech-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  max-width: 100%;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+.tech-logo__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 36px;
+}
+
+.tech-logo__icon img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 30px;
+  object-fit: contain;
+  opacity: 0.6;
+  filter: grayscale(1) saturate(0.25);
+  transition:
+    opacity 200ms ease,
+    filter 200ms ease,
+    transform 200ms ease;
+}
+
+/* Preserve the dark-green wordmark on a light neutral backing. */
+.tech-logo--django .tech-logo__icon {
+  flex-basis: 72px;
+  width: 72px;
+}
+
+.tech-logo--django img {
+  padding: 4px;
+  background: var(--color-text);
+  border-radius: 2px;
+}
+
+/* Suppress the PNG's dark background without cropping its white mark. */
+.tech-logo--speedtest .tech-logo__icon img {
+  max-height: 36px;
+  filter: grayscale(1) contrast(2);
+  mix-blend-mode: lighten;
+}
+
+@media (hover: hover) {
+  .tech-logo:hover img {
+    opacity: 1;
+    filter: grayscale(0) saturate(1);
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-logo__icon img {
+    transition: none;
+  }
+
+  .tech-logo:hover img {
+    transform: none;
+  }
+}
