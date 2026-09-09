@@ -47,9 +47,9 @@ function Engineering() {
             <div className="engineering__tags">
               <TechLogo technology="React" />
               <TechLogo technology="TypeScript" />
-              <span>Testing</span>
-              <span>Refactoring</span>
-              <span>QA</span>
+              <TechLogo technology="Testing" />
+              <TechLogo technology="Refactoring" />
+              <TechLogo technology="QA" />
             </div>
           </div>
         </article>

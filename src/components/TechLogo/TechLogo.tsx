@@ -9,6 +9,9 @@ const technologies = {
   Django: 'django.svg',
   Speedtest: '../speedtest.png',
   'Internal tooling': 'internal-tooling.svg',
+  Testing: 'testing.svg',
+  Refactoring: 'refactoring.svg',
+  QA: 'qa.svg',
 } as const
 
 type TechLogoProps = {
