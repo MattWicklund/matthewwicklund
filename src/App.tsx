@@ -4,6 +4,7 @@ import About from './sections/About'
 import Engineering from './sections/Engineering'
 import MusicTransition from './sections/MusicTransition'
 import Music from './sections/Music'
+import ArtistRelationships from './sections/ArtistRelationships'
 import Contact from './sections/Contact'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Engineering />
         <MusicTransition />
         <Music />
+        <ArtistRelationships />
         <Contact />
       </main>
     </>
